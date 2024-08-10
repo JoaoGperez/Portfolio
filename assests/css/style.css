@@ -1,0 +1,19 @@
+/*Main CSS*/
+
+@import url('menu.css');
+@import url('inicio.css');
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif; 
+    line-height: 1.6; 
+    background-color: #fff; 
+}
+

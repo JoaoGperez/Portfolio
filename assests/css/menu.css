@@ -1,0 +1,106 @@
+@import url('style.css');
+
+header {
+    background-color: #151515; 
+    padding: 25px 200px; 
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.navbar p {
+    font-size: 2.0em; 
+    color: #fff;
+}
+
+.menu-toggle {
+    display: none; 
+    font-size: 2.0em;
+    color: #fff; 
+    cursor: pointer;
+}
+
+.nav-links {
+    display: flex; 
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    margin: 0 20px; 
+}
+
+.nav-links a {
+    text-decoration: none; 
+    color: #fff; 
+    font-size: 1.2em; 
+    padding: 5px 10px; 
+    display: block; 
+    position: relative;
+}
+
+.nav-links a::after {
+    content: ""; 
+    display: block; 
+    width: 0;
+    height: 2px; 
+    background-color: #0056b3; 
+    position: absolute;
+    bottom: 0; 
+    left: 0; 
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%; /* Expande a barra para a largura total do link ao passar o mouse */
+}
+
+/* Estilos para telas menores */
+@media (max-width: 768px) {
+    header {
+        padding: 20px 10px;
+    }
+
+    .navbar {
+        flex-direction: row; 
+        align-items: flex-start;
+    }
+
+    .menu-toggle {
+        display: block; 
+        margin: 0; 
+        align-self: flex-end; 
+        margin-bottom: 10px; 
+    }
+
+    .nav-links {
+        display: none; 
+        flex-direction: column; 
+        width: 100%; 
+        text-align: center; 
+        background-color: #151515; 
+        position: absolute; 
+        top: 100%;
+        left: 0;
+        z-index: 1; 
+        padding: 10px 0; 
+    }
+
+    .nav-links.active {
+        display: flex; 
+    }
+
+    .nav-links li {
+        margin: 10px 0; 
+    }
+
+    .nav-links a {
+        font-size: 1.0em;
+        padding: 10px;
+    }
+}
