@@ -57,13 +57,27 @@ header {
 }
 
 .nav-links a:hover::after {
-    width: 100%; /* Expande a barra para a largura total do link ao passar o mouse */
+    width: 100%; 
 }
 
 /* Estilos para telas menores */
 @media (max-width: 768px) {
+
+    @keyframes show-down {
+        0% {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+
     header {
-        padding: 20px 10px;
+        padding: 20px 20px 10px 20px;
+        border-bottom: 2px solid #fff;
     }
 
     .navbar {
@@ -81,26 +95,34 @@ header {
     .nav-links {
         display: none; 
         flex-direction: column; 
-        width: 100%; 
+        width: 200px; 
         text-align: center; 
         background-color: #151515; 
         position: absolute; 
         top: 100%;
-        left: 0;
+        right: 0;
         z-index: 1; 
         padding: 10px 0; 
+        box-shadow: 0 4px 4px rgba(0,0,0,.3);
+
     }
 
     .nav-links.active {
-        display: flex; 
-    }
+        display: block;
+        animation: show-down .3s forwards;
+        text-transform: uppercase;
+        letter-spacing: 2px;    }
 
     .nav-links li {
-        margin: 10px 0; 
+        margin: 0px 0; 
     }
 
     .nav-links a {
         font-size: 1.0em;
-        padding: 10px;
+        padding: 8px;
+    }
+        .nav-links a::after {
+        height: 3px; /* Diminuir a altura da barra */
+        transition: 0.3s;
     }
 }
