@@ -2,7 +2,7 @@
 
 header {
     background-color: black; 
-    padding: 25px 270px; 
+    padding: 25px 220px; 
     position: relative;
     
 }
@@ -50,7 +50,7 @@ header {
     display: block; 
     width: 0;
     height: 2px; 
-    background-color: #0056b3; 
+    background-color: #00d2df; 
     position: absolute;
     bottom: 0; 
     left: 0; 
