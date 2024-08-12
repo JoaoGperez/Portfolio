@@ -1,1 +1,61 @@
 @import url('style.css');
+
+.inicio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px 80px;
+    background-color: #151515;
+}
+
+.container-inicio { 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 250px;
+    color: #fff;
+}
+
+.container-inicio h1 {
+
+    font-size:3em;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+
+.container-inicio p {
+    font-size: 2em;
+    padding: 0px 0px 80px;
+}
+
+.inicio-img {
+    max-width: 40%;
+    margin-left: auto;
+}
+
+.inicio-img img {
+    width: 70%;
+    height: auto;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .inicio {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container {
+        align-items: center; /* Alinha o texto ao centro em telas menores */
+        margin-right: 0; /* Remove o margem à direita */
+    }
+
+    .inicio-img {
+        max-width: 80%;
+        margin-left: 0; /* Remove o margem à esquerda */
+    }
+
+    .inicio-img img {
+        width: 100%; /* Ajusta a largura da imagem */
+    }
+}
