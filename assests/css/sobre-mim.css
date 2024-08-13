@@ -65,7 +65,6 @@
     border-radius: 5px;
     text-decoration: none;
     text-align: center;
-    transition: background-color 0.3s ease, transform 0.3s ease;
     margin-top: 20px; 
     transition: border-color 1.5s ease, box-shadow 1s ease;
 }

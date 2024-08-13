@@ -1,1 +1,107 @@
 @import url('style.css');
+
+.projetos {
+    padding: 50px 20px;
+    background-color: #151515; /* Cor de fundo leve */
+}
+
+.projetos .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.projetos h2 {
+    font-size: 2.5em;
+    font-weight: 300;
+    padding: 0px 10px 50px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.projetos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.projeto-card {
+    background-color: #000;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: border-color 1.5s ease, box-shadow 1s ease;
+    text-align: left;
+    padding: 20px;
+    border: solid 5px #00d2df;
+}
+.hidden {
+    display: none;
+}
+
+
+.projeto-card img {
+    width: 100%;
+    height: 200px; /* Ajuste conforme necessário */
+    object-fit: cover;
+}
+
+.projeto-card h3 {
+    font-size: 1.8em;
+    font-weight: 200;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.projeto-card p {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #fff;
+}
+
+.btn-projeto {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: none;
+    border: solid 5px #00d2df;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: border-color 1.5s ease, box-shadow 1s ease;
+}
+
+.btn-projeto:hover {
+    border-color: #fff; 
+    box-shadow: 0 0 35px #00d2df; 
+}
+
+.projeto-card:hover {
+    transform: translateY(-5px);
+    border-color: #fff; 
+    box-shadow: 0 0 35px #00d2df;
+}
+
+.load-btn{
+    padding: 30px 10px 10px;
+}
+
+.btn-load-more {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #151515; /* Cor de fundo do botão */
+    border: solid 5px #00d2df;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: border-color 0.5s ease, box-shadow 1s ease;
+}
+
+.btn-load-more:hover {
+    border-color: #fff; 
+}
