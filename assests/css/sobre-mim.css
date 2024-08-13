@@ -1,1 +1,117 @@
 @import url('style.css');
+
+.sobre-mim {
+    padding: 50px 20px;
+    background-color: #000; 
+}
+
+.container-sobre {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.perfil-img {
+    width: 40%; 
+    height: 40%;
+    overflow: hidden; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.perfil-img img {
+    width: 70%; 
+    height: 70%; 
+    object-fit: cover; 
+    object-position: center; 
+    border: solid 5px #00d2df;
+    border-radius: 2%;
+    transition: border-color 1.5s ease, box-shadow 1s ease;
+}
+
+.perfil-img img:hover {
+    border-color: #fff; 
+    box-shadow: 0 0 35px #00d2df; 
+
+}
+
+.sobre-texto {
+    flex: 2;
+}
+
+.sobre-texto h2 {
+    font-size: 2.5em;
+    font-weight: 200;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.sobre-texto p {
+    font-size: 1.5em;
+    line-height: 1.6;
+    color: #fff;
+}
+
+.btn-download {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: none; 
+    border: solid 5px #00d2df;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px; 
+    transition: border-color 1.5s ease, box-shadow 1s ease;
+}
+
+.btn-download img {
+    width: 30px; 
+    height: auto;
+    margin-right: 10px; 
+}
+
+.btn-download:hover {
+    border-color: #fff; 
+    box-shadow: 0 0 35px #00d2df; 
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .container-sobre {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        text-align: center; 
+    }
+
+    .perfil-img {
+        width: 80%; 
+        margin: 0; 
+        margin-bottom: 20px; 
+    }
+
+    .sobre-texto {
+        flex: none;
+    }
+
+    .sobre-texto h2 {
+        font-size: 2.2em;
+        margin-bottom: 5px;
+    }
+
+    .sobre-texto p {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+
+    .btn-download {
+        font-size: 1em; 
+        padding: 8px 16px; 
+    }
+}
