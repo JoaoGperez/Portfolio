@@ -1,1 +1,89 @@
 @import url('style.css');
+
+.contato {
+    padding: 50px 20px;
+    background-color: #151515; /* Cor de fundo leve */
+}
+
+.contato .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.contato h2 {
+    font-size: 2.5em;
+    font-weight: 300;
+    padding: 0px 10px 30px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1.2em;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #00d2df;
+    background-color: #000;
+    color: #fff;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #fff;
+    outline: none;
+}
+
+.btn-submit {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 40px;
+    font-size: 1.5em;
+    color: #fff;
+    background-color: #151515; 
+    border: solid 5px #00d2df;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 20px; 
+    transition: border-color 1.5s ease, box-shadow 1s ease;
+}
+
+.btn-submit:hover {
+    border-color: #fff; 
+    box-shadow: 0 0 35px #00d2df; 
+}
+
+@media (max-width: 768px) {
+    .contato .container {
+        padding: 10px;
+    }
+
+    .contato h2 {
+        font-size: 2em;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 1em;
+    }
+
+    .btn-submit {
+        font-size: 1em;
+    }
+}
