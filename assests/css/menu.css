@@ -3,8 +3,11 @@
 header {
     background-color: black; 
     padding: 25px 220px; 
-    position: relative;
-    
+    position: fixed;
+    width: 100%;
+    z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
+    border-bottom: solid 3px #fff;
+
 }
 
 .navbar {

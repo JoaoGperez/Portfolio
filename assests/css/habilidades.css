@@ -1,1 +1,64 @@
 @import url('style.css');
+
+#habilidades {
+    padding: 50px 20px;
+    background-color: #000; 
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.container h2{
+    font-size: 2.5em;
+    font-weight: 300;
+    padding: 0px 10px 30px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.habilidades-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.habilidade-card {
+    background-color: none;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.habilidade-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.js-icon {
+    width: 110px;
+    height: 150px;
+    margin-bottom: 5px;
+}
+
+.habilidade-icon {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+
+
+.habilidade-card h3 {
+    font-size: 2.0em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.habilidade-card p {
+    font-size: 1.5em;
+    color: #fff;
+}
