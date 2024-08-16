@@ -42,7 +42,8 @@
 }
 
 .card-info{
-    padding: 20px;
+    margin-top: 0px;
+    padding: 0px 20px 20px;
 }
 .hidden {
     display: none;
@@ -65,7 +66,8 @@
 .projeto-card h3 {
     font-size: 1.8em;
     font-weight: 200;
-    margin-top: 10px;
+    margin-top: 0px;
+    padding: 5px 0px 0px;
     color: #fff;
 }
 
@@ -122,6 +124,10 @@
 
 /* Consultas de Mídia para dispositivos móveis */
 @media (max-width: 768px) {
+    
+    .projetos{
+        padding: 0px 20px 20px;
+    }
     .projetos-grid {
         grid-template-columns: repeat(1, 1fr);
     }

@@ -125,7 +125,7 @@
     .inicio {
         flex-direction: column;
         text-align: center;
-        padding: 30px 10px; 
+        padding: 110px 10px 30px; 
     }
 
     .container-inicio {

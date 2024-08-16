@@ -23,7 +23,7 @@
 .habilidades-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+    gap: 10px;
 }
 
 .habilidade-card {
@@ -51,14 +51,63 @@
 }
 
 
-
 .habilidade-card h3 {
     font-size: 2.0em;
     color: #fff;
+    margin-top: 0px;
     margin-bottom: 10px;
 }
 
 .habilidade-card p {
     font-size: 1.5em;
     color: #fff;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #habilidades{
+        padding: 30px 20px 20px;
+    }
+    .container h2 {
+        font-size: 2em;
+        padding: 0px 10px 20px;
+    }
+
+    .habilidade-card h3 {
+        margin: 0px;
+        padding: 0px;
+        font-size: 1.8em;
+    }
+
+    .habilidade-card p {
+        font-size: 1.3em;
+    }
+
+    .js-icon, .habilidade-icon {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container h2 {
+        font-size: 2em;
+    }
+
+    .habilidade-card h3 {
+        font-size: 1.6em;
+    }
+
+    .habilidade-card p {
+        font-size: 1.2em;
+    }
+
+    .js-icon, .habilidade-icon {
+        width: 100px;
+        height: 100px;
+    }
+
+    .habilidade-card {
+        padding: 15px;
+    }
 }

@@ -147,6 +147,10 @@ h3{
 
 /* CSS Responsivo */
 @media (max-width: 768px) {
+    #contato{
+        padding: 10px 20px 20px;
+    }
+
     .container-contato {
         flex-direction: column; 
         gap: 20px; 
