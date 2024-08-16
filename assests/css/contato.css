@@ -1,8 +1,10 @@
 /* Seção de Contato */
 #contato {
     padding: 50px 20px;
-    background-color: #151515; /* Cor de fundo da seção */
-    color: #fff; /* Cor do texto */
+    background-color: #151515;
+    /* Cor de fundo da seção */
+    color: #fff;
+    /* Cor do texto */
 }
 
 .container-contato {
@@ -13,8 +15,9 @@
     gap: 0px;
 }
 
-.formulario-contato, .info-contato {
-    flex: 1; 
+.formulario-contato,
+.info-contato {
+    flex: 1;
 }
 
 h2 {
@@ -35,7 +38,8 @@ form label {
     margin-bottom: 5px;
 }
 
-form input, form textarea {
+form input,
+form textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
@@ -60,8 +64,15 @@ form button {
 }
 
 form button:hover {
-    border-color: #fff; 
-    box-shadow: 0 0 35px #00d2df; 
+    border-color: #fff;
+    box-shadow: 0 0 35px #00d2df;
+}
+
+.form-message {
+    display: none;
+    color: #00d2df;
+    margin-top: 20px;
+    
 }
 
 .info-contato {
@@ -72,18 +83,18 @@ form button:hover {
 
 .redes-sociais {
     display: flex;
-    flex-direction: column; 
-    align-items: flex-start; 
-    gap: 20px; 
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
     margin-top: 20px;
 }
 
-h3{
+h3 {
     margin-top: 20px;
 
 }
 
-.redes-sociais h3 { 
+.redes-sociais h3 {
     color: #fff;
 }
 
@@ -97,21 +108,22 @@ h3{
 }
 
 .redes-sociais a svg {
-    margin-right: 10px; 
+    margin-right: 10px;
 }
 
 .redes-sociais a:hover {
     color: #00d2df;
-    transform: translateX(5px); 
+    transform: translateX(5px);
 }
 
 .redes-sociais a:visited {
-    color: #fff; /* Mantém a cor original */
+    color: #fff;
+    /* Mantém a cor original */
 }
 
-.email-text{
+.email-text {
     font-size: 1.5em;
-    margin-right: 0px ;
+    margin-right: 0px;
 }
 
 
@@ -147,28 +159,30 @@ h3{
 
 /* CSS Responsivo */
 @media (max-width: 768px) {
-    #contato{
+    #contato {
         padding: 10px 20px 20px;
     }
 
     .container-contato {
-        flex-direction: column; 
-        gap: 20px; 
+        flex-direction: column;
+        gap: 20px;
     }
 
-    .formulario-contato, .info-contato {
+    .formulario-contato,
+    .info-contato {
         width: 90%;
-        padding: 0px; 
-        margin: 0 auto; 
+        padding: 0px;
+        margin: 0 auto;
         text-align: left;
     }
 
-    .btn-enviar{
+    .btn-enviar {
         text-align: center;
     }
 
     #contato h2 {
-        text-align: center; /* Centraliza o título "Contato" */
+        text-align: center;
+        /* Centraliza o título "Contato" */
         font-size: 2.5em;
         margin-top: 0px;
         padding-top: 0px;
@@ -177,12 +191,12 @@ h3{
     }
 
     .info-contato {
-        padding-top: 0; 
+        padding-top: 0;
     }
 
     .info-contato h3 {
         font-size: 1.8em;
-        padding-top: 0; 
+        padding-top: 0;
         margin-bottom: 0px;
         color: #00d2df;
     }
@@ -192,20 +206,25 @@ h3{
     }
 
     .redes-sociais a {
-        justify-content: center; 
+        justify-content: center;
     }
 
-    form label, form input, form textarea, form button {
-        font-size: 1em; 
+    form label,
+    form input,
+    form textarea,
+    form button {
+        font-size: 1em;
     }
 
-    h2, h3 {
-        font-size: 1.5em; /* Diminui o tamanho da fonte dos títulos */
+    h2,
+    h3 {
+        font-size: 1.5em;
+        /* Diminui o tamanho da fonte dos títulos */
         padding: 20px 0px 0px;
         color: #00d2df;
     }
 
-    .email-text{
+    .email-text {
         font-size: 1.2em;
     }
 
@@ -223,14 +242,21 @@ h3{
 /* Regras adicionais para telas ainda menores, como smartphones */
 @media (max-width: 480px) {
     .container-contato {
-        padding: 20px; /* Ajusta o padding para telas muito pequenas */
+        padding: 20px;
+        /* Ajusta o padding para telas muito pequenas */
     }
 
-    form label, form input, form textarea, form button {
-        font-size: 0.9em; /* Reduz ainda mais o tamanho da fonte */
+    form label,
+    form input,
+    form textarea,
+    form button {
+        font-size: 0.9em;
+        /* Reduz ainda mais o tamanho da fonte */
     }
 
-    h2, h3 {
-        font-size: 1.2em; /* Reduz o tamanho dos títulos */
+    h2,
+    h3 {
+        font-size: 1.2em;
+        /* Reduz o tamanho dos títulos */
     }
 }

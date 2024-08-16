@@ -1,4 +1,3 @@
-// menu.js
 
 export function setupMenu() {
     const menuToggle = document.getElementById('menu-toggle');

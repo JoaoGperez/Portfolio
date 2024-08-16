@@ -11,6 +11,5 @@ document.addEventListener('DOMContentLoaded', function() {
     smoothScroll();
     initTypingEffect();
     toggleProjects();
-
 });
 
