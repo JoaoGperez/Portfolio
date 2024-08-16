@@ -5,7 +5,7 @@ header {
     padding: 25px 220px; 
     position: fixed;
     width: 100%;
-    z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
+    z-index: 1000; 
     border-bottom: solid 3px #fff;
 
 }
@@ -126,7 +126,7 @@ header {
         padding: 8px;
     }
         .nav-links a::after {
-        height: 3px; /* Diminuir a altura da barra */
+        height: 3px;
         transition: 0.3s;
     }
 }

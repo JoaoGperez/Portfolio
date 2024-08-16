@@ -25,9 +25,8 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
     padding: 10px;
-    transition: max-height 0.5s ease, opacity 0.5s ease; /* Adiciona transição */
-    overflow: hidden; /* Esconde os elementos que saem da área visível */
-
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+    overflow: hidden; 
 }
 
 .projeto-card {
@@ -52,7 +51,7 @@
 
 .projeto-card img {
     width: 100%;
-    height: 200px; /* Ajuste conforme necessário */
+    height: 200px; 
     object-fit: cover;
     border-bottom: solid 3px #fff;
 }
