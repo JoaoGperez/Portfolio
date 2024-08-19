@@ -12,7 +12,7 @@ export function initTypingEffect() {
         if (charIndex < fullText.length) {
             typingText.textContent += fullText[charIndex];
             charIndex++;
-            setTimeout(typeLetter, 150); // Tempo entre cada letra
+            setTimeout(typeLetter, 150); 
         }
     };
 
@@ -20,7 +20,7 @@ export function initTypingEffect() {
     setTimeout(() => {
         typingText.style.visibility = 'visible';
         typeLetter();
-    }, 100); // Atraso para sincronizar com o CSS
+    }, 100);
 }
 
 // Chama a função quando o DOM estiver pronto

@@ -11,22 +11,31 @@ export function setupMenu() {
 // smoothScroll.js
 export function smoothScroll() {
     const links = document.querySelectorAll('.nav-links a');
+    const logo = document.querySelector('.logo');
+
+    function scrollToElement(targetId) {
+        const targetElement = document.getElementById(targetId);
+        const offset = 80; 
+        const elementPosition = targetElement.offsetTop - offset;
+
+        window.scrollTo({
+            top: elementPosition,
+            behavior: 'smooth'
+        });
+    }
 
     links.forEach(link => {
         link.addEventListener('click', function (e) {
-            e.preventDefault(); // Impede o comportamento padrão do link
-            const targetId = this.getAttribute('href').substring(1); // Obtém o ID do alvo
-            const targetElement = document.getElementById(targetId);
-            
-            // Defina a compensação com base na altura do seu menu ou header fixo
-            const offset = 80; // Ajuste este valor conforme necessário
-
-            const elementPosition = targetElement.offsetTop - offset;
-
-            window.scrollTo({
-                top: elementPosition,
-                behavior: 'smooth'
-            });
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1); 
+            scrollToElement(targetId);
         });
     });
+
+    if (logo) {
+        logo.addEventListener('click', function (e) {
+            e.preventDefault(); 
+            scrollToElement('inicio'); 
+        });
+    }
 }

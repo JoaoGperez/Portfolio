@@ -50,7 +50,6 @@
     margin-bottom: 10px;
 }
 
-
 .habilidade-card h3 {
     font-size: 2.0em;
     color: #fff;
@@ -70,7 +69,7 @@
     }
     .container h2 {
         font-size: 2em;
-        padding: 0px 10px 20px;
+        padding: 0px 10px 0px;
     }
 
     .habilidade-card h3 {
