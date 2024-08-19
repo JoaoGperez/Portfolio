@@ -2,7 +2,8 @@
 
 .projetos {
     padding: 50px 20px;
-    background-color: #151515; /* Cor de fundo leve */
+    background-color: #151515;
+    /* Cor de fundo leve */
 }
 
 .projetos .container {
@@ -26,10 +27,12 @@
     gap: 40px;
     padding: 10px;
     transition: max-height 0.5s ease, opacity 0.5s ease;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 .projeto-card {
+    display: flex;
+    flex-direction: column;
     background-color: #000;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -39,16 +42,22 @@
     text-align: left;
     padding: 0px;
     border: solid 5px #00d2df;
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
 }
 
-.card-info{
-    margin-top: 0px;
-    padding: 0px 20px 20px;
+.card-info {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
 .hidden {
     display: none;
 }
-
 
 .projeto-card img {
     width: 100%;
@@ -57,7 +66,8 @@
     border-bottom: solid 3px #fff;
 }
 
-.img-card{
+
+.img-card {
     width: 100%;
     padding-left: 0px;
     padding-right: 0px;
@@ -66,14 +76,13 @@
 .projeto-card h3 {
     font-size: 1.8em;
     font-weight: 200;
-    margin-top: 0px;
-    padding: 5px 0px 0px;
+    margin: 10px 0 0; 
     color: #fff;
 }
 
 .projeto-card p {
     font-size: 1.2em;
-    margin: 10px 0;
+    margin: 10px 0 20px;
     color: #fff;
 }
 
@@ -87,20 +96,23 @@
     border-radius: 5px;
     text-decoration: none;
     transition: border-color 1.5s ease, box-shadow 1s ease;
+    margin-top: auto; 
+    align-self: center; 
+    width: auto; 
+    align-self: flex-start;
 }
-
 .btn-projeto:hover {
-    border-color: #fff; 
-    box-shadow: 0 0 35px #00d2df; 
+    border-color: #fff;
+    box-shadow: 0 0 35px #00d2df;
 }
 
 .projeto-card:hover {
     transform: translateY(-5px);
-    border-color: #fff; 
+    border-color: #fff;
     box-shadow: 0 0 35px #00d2df;
 }
 
-.load-btn{
+.load-btn {
     padding: 20px 10px 10px;
 }
 
@@ -109,7 +121,8 @@
     padding: 10px 20px;
     font-size: 1.2em;
     color: #fff;
-    background-color: #151515; /* Cor de fundo do botão */
+    background-color: #151515;
+    /* Cor de fundo do botão */
     border: solid 5px #00d2df;
     border-radius: 5px;
     text-decoration: none;
@@ -119,15 +132,16 @@
 }
 
 .btn-load-more:hover {
-    border-color: #fff; 
+    border-color: #fff;
 }
 
 /* Consultas de Mídia para dispositivos móveis */
 @media (max-width: 768px) {
-    
-    .projetos{
+
+    .projetos {
         padding: 0px 20px 20px;
     }
+
     .projetos-grid {
         grid-template-columns: repeat(1, 1fr);
     }
